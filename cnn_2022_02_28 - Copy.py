@@ -240,7 +240,7 @@ for epoch in range(numEpoch):
 
     if val_loss < best_loss:
         best_loss = val_loss
-        torch.save(net, "bestModel_v6_3.pth")
+        torch.save(net, "/models/bestModel_vXX.pth")
     # Step with the scheduler
     scheduler.step()
 
