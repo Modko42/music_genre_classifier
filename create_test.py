@@ -5,7 +5,7 @@ import shutil
 genres = 'blues classical country disco pop hiphop metal reggae rock'
 genres = genres.split()
 
-directory = "/content2/spectrograms3sec/train/"
+directory = "C:/Users/beni1/Desktop/spectograms3s_v5/train/"
 for g in genres:
   filenames = os.listdir(os.path.join(directory,f"{g}"))
   random.shuffle(filenames)
@@ -13,4 +13,4 @@ for g in genres:
 
   for f in test_files:
 
-    shutil.move(directory + f"{g}"+ "/" + f,"/content2/spectrograms3sec/test/" + f"{g}")
+    shutil.move(directory + f"{g}"+ "/" + f,"C:/Users/beni1/Desktop/spectograms3s_v5/test/" + f"{g}")
